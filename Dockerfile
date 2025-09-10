@@ -6,7 +6,7 @@ WORKDIR /usr/src/app
 # Only copy package files first for caching
 COPY package*.json ./
 # RUN npm ci --only=production || npm install --only=production
-RUN npm ci --omit=dev || npm install --omit=dev
+RUN npm ci --omit=dev 
 
 # Copy rest
 # COPY . .
