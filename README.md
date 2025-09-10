@@ -1,4 +1,4 @@
-Awesome—here’s a **from-scratch, simplest path** that gets you all 5 steps working with a tiny Node app, a Dockerfile, and a Jenkins pipeline. Copy-paste friendly.
+
 
 ---
 
