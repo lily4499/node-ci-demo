@@ -19,10 +19,10 @@ pipeline {
     // GitHub webhook (realtime) :  With a webhook, the build starts immediately.
   //}
 
-  options {
-    timestamps()
-    ansiColor('xterm')
-  }
+//   options {
+//     timestamps()
+//     ansiColor('xterm')
+//   }
 
   stages {
     stage('Checkout') {

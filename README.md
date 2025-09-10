@@ -54,19 +54,16 @@ gh repo create YOUR_GH_USER/node-ci-demo --public --source=. --remote=origin --p
 * **Build Triggers**: choose ONE:
 
   * **Simplest (no public URL):** check **Poll SCM** and set `H/2 * * * *`
+
   * **Realtime (needs public URL):** check **GitHub hook trigger for GITScm polling**
+
     (If Jenkins is local, expose with ngrok and set a GitHub webhook to `https://<ngrok>/github-webhook/`)
-        Add webhook (GitHub UI)
-
-            Repo → Settings → Webhooks → Add webhook
-
-            Payload URL: https://<your-ngrok-subdomain>/github-webhook/
-
-            Content type: application/json
-
-            Events: “Just the push event” (or include PRs too)
-
-            Add webhook
+            Add webhook (GitHub UI)
+                Repo → Settings → Webhooks → Add webhook
+                Payload URL: https://<your-ngrok-subdomain>/github-webhook/
+                Content type: application/json
+                Events: “Just the push event” (or include PRs too)
+                Add webhook
 
 Click **Save**.
 
