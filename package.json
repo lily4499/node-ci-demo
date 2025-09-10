@@ -5,7 +5,7 @@
   "license": "MIT",
   "scripts": {
     "start": "node app.js",
-    "test": "node __tests__/app.test.js"
+    "test": "node tests/app.test.js"
   },
   "devDependencies": {}
 }
